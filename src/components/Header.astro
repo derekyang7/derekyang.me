@@ -1,0 +1,64 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import Link from "./Link.astro";
+---
+
+<header>
+  <div class="flex flex-row mt-16">
+    <img
+      class="rounded-full w-48 h-48 border-4 border-cerulean mx-auto"
+      src="profile.png"
+    />
+    <div>
+      <h1 class="text-5xl text-gray-600 tracking-wide">
+        <p class="inline">Derek</p>
+        <p class="inline font-light">Yang</p>
+      </h1>
+      <h2 class="font-light mt-3">
+        Full-Stack Engineer @
+        <Link
+          class="text-cerulean underline"
+          href="https://www.uplift.com/en-ca/homepage/"
+          target="_blank"
+        >
+          Uplift
+        </Link>
+        | Toronto, Canada
+      </h2>
+      <div class="grid grid-cols-2 gap-2 mt-6">
+        <HeaderLink
+          type="linkedin"
+          href="https://www.linkedin.com/in/derek-y"
+          target="_blank"
+          class="mr-6 font-light hover:text-cerulean"
+        >
+          linkedin.com/in/derek-y/
+        </HeaderLink>
+        <HeaderLink
+          type="github"
+          href="https://github.com/derekyang7"
+          target="_blank"
+          class="font-light hover:text-cerulean"
+        >
+          github.com/derekyang7
+        </HeaderLink>
+        <HeaderLink
+          type="email"
+          href="mailto:derek.yang7@gmail.com"
+          target="_blank"
+          class="mr-6 font-light hover:text-cerulean"
+        >
+          derek.yang7@gmail.com
+        </HeaderLink>
+        <HeaderLink
+          type="instagram"
+          href="https://www.instagram.com/derekyang__"
+          target="_blank"
+          class="font-light hover:text-cerulean"
+        >
+          instagram.com/derekyang__
+        </HeaderLink>
+      </div>
+    </div>
+  </div>
+</header>

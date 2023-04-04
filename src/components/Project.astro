@@ -1,0 +1,16 @@
+---
+import Link from "./Link.astro";
+
+const { href, date, ...props } = Astro.props;
+---
+
+<div class="flex hover:text-cerulean cursor-pointer" {...props}>
+  <Link
+    class="mb-3"
+    href={href}
+    target="_blank"
+  >
+    <slot />
+  </Link>
+  <p class="ml-auto">{date}</p>
+</div>
